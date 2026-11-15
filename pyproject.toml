@@ -1,0 +1,35 @@
+# Build metadata only. Nothing has been published: no upload to PyPI has been run,
+# and none should be until the founder creates the PyPI account and approves it.
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novigapi"
+version = "0.1.0"
+description = "Python client for novigapi.com, a read-only Novig market data API, plus devig helpers. Independent; not affiliated with Novig."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["novig", "odds", "devig", "no-vig", "prediction-market", "sports-data", "closing-line-value"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Office/Business :: Financial",
+]
+
+[project.urls]
+Repository = "https://github.com/novigapi/novigapi-python"
+Issues = "https://github.com/novigapi/novigapi-python/issues"
+Homepage = "https://novigapi.com"
+Documentation = "https://novigapi.com/docs"
+"Python guide" = "https://novigapi.com/novig-api-python"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
