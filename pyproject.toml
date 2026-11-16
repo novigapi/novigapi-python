@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "novigapi"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python client for novigapi.com, a read-only Novig market data API, plus devig helpers. Independent; not affiliated with Novig."
 readme = "README.md"
 license = { text = "MIT" }

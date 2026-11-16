@@ -15,7 +15,7 @@ Independent. Not affiliated with, endorsed by or sponsored by Novig.
 pip install novigapi
 ```
 
-Not on PyPI yet: the name `novigapi` was free on 15 Nov 2026 and the package is ready to publish. Until then, from a clone: `pip install -e .`
+On PyPI: https://pypi.org/project/novigapi/ . Source: https://github.com/novigapi/novigapi-python
 
 Tests need no key, no network and no pytest: `python3 tests/run.py` (pytest also works).
 

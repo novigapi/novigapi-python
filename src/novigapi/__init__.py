@@ -3,7 +3,7 @@
 Independent. Not affiliated with, endorsed by or sponsored by Novig.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from .client import DEFAULT_BASE_URL, NovigAPI, NovigAPIError, RateLimitError  # noqa: E402
 from .devig import (  # noqa: E402
