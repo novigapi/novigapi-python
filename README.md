@@ -1,6 +1,12 @@
-# novigapi (Python)
+# Novig API for Python: novigapi
 
-A small Python client for [novigapi.com](https://novigapi.com), a read-only Novig market data API, plus pure-Python devig helpers and three runnable examples.
+A Novig API Python client for read-only Novig market data. `pip install novigapi` and read open Novig markets, player props, intraday line history and no-vig fair prices, plus devig helpers you can run offline.
+
+[Website](https://novigapi.com/?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python) | [Docs](https://novigapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python) | [Free API key](https://novigapi.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python) | [Pricing](https://novigapi.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python) | [All SDKs](https://novigapi.com/sdks?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python)
+
+Also for novigapi.com: [JavaScript: `npm install novigapi`](https://github.com/novigapi/novigapi-js) | [MCP server: `npx -y novigapi-mcp`](https://github.com/novigapi/novigapi-mcp)
+
+A small Python client for [novigapi.com](https://novigapi.com/?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python), a read-only Novig market data API, plus pure-Python devig helpers and three runnable examples.
 
 Novig has an official trading API and free daily CSVs. novigapi.com is the read-only data layer on top: no account, names resolved, intraday line history, fair prices and alerts. This package talks to novigapi.com. To place orders or read a Novig account, use the official Novig API documented at [docs.novig.com](https://docs.novig.com).
 
@@ -21,7 +27,7 @@ Tests need no key, no network and no pytest: `python3 tests/run.py` (pytest also
 
 ## Quickstart
 
-Get a free key at [novigapi.com/sign-up](https://novigapi.com/sign-up) (Free plan: 100 credits a month, 20 requests a minute), then:
+Get a free key at [novigapi.com/sign-up](https://novigapi.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python) (Free plan: 100 credits a month, 20 requests a minute), then:
 
 ```bash
 export NOVIGAPI_KEY=nv_...
@@ -69,7 +75,7 @@ Every method returns the JSON envelope `{"data": ..., "meta": {...}}`. List endp
 | `clv(market_id, player, league, date, settled, since, until)` | `GET /clv` |
 | `line_moves(league, market_id, kind, since, min_delta_pp)` | `GET /line-moves` |
 
-Base URL `https://novigapi.com/api/v1`. Auth header `Authorization: Bearer nv_...`. Full reference: [novigapi.com/docs](https://novigapi.com/docs).
+Base URL `https://novigapi.com/api/v1`. Auth header `Authorization: Bearer nv_...`. Full reference: [novigapi.com/docs](https://novigapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python).
 
 ### Errors and limits
 
@@ -103,7 +109,7 @@ Worked example, -300 / +240 (implied 75.00% and 29.41%, 4.41% overround):
 | Power | 73.31% (-275) | 26.69% (+275) |
 | Shin | 72.79% (-268) | 27.21% (+268) |
 
-With two outcomes, Shin and additive agree. The [no-vig calculator](https://novigapi.com/no-vig-calculator) runs the same four methods in the browser.
+With two outcomes, Shin and additive agree. The [no-vig calculator](https://novigapi.com/no-vig-calculator?utm_source=github&utm_medium=readme&utm_campaign=novigapi-python) runs the same four methods in the browser.
 
 ## Examples
 
